@@ -10,6 +10,5 @@ function solution(t, p) {
     if (sliceNum <= (+p)) cnt ++
   }
   
-  
   return cnt
 }
