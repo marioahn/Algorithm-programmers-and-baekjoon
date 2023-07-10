@@ -13,7 +13,8 @@ function solution(babbling) {
     for (let j=0; j<4; j++) {
       for (let k=0; k<4; k++) {
         if (tmp[0] === babyWords[k][0]) {
-          tmp = tmp.replace(babyWords[k],"")
+            tmp = tmp.replace(babyWords[k],"")
+            break
         }
       }
     }
