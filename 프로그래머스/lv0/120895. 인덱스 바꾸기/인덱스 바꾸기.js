@@ -10,10 +10,8 @@
   // console.log(b)
 
 function solution(str, num1, num2) {
-  let arr = [...str]
-  tmp = str[num2]
-  arr[num1] = tmp
-  arr[num2] = str[num1]
+  let arr = [...str];
+  [arr[num1], arr[num2]] = [arr[num2], arr[num1]]
   return arr.join("")
   
 
