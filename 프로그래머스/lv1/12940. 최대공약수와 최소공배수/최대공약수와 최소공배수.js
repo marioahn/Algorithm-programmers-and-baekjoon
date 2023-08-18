@@ -1,20 +1,20 @@
 function solution(n, m) {
-    // 최대공약수를 구하는 함수
-    function gcd(a, b) {
-        while (b !== 0) { // b가 0이 아닐 때 까지 돌아라 이하는 swap 한 것!! 
-            let c;
-            c = b;
-            b = a % b;
-            a = c;
-        }
-        return a;
-    }
+   let ans = [n, m] // [5, 12]
 
-    // 최소공배수를 구하는 함수
-    function lcm(a, b) {
-        return (a * b) / gcd(a, b);
-    }
+   let sorted_ans = ans.sort((a, b) => { b - a }) // [12, 5]
 
-    // 최대공약수와 최소공배수를 배열로 반환
-    return [gcd(n, m), lcm(n, m)];
+
+   for (let i = 0; i < 100; i++) {
+      if (!sorted_ans[i] % sorted_ans[i + 1] !== 0) {
+         continue
+      } else {
+         ans.push(sorted_ans[i] % sorted_ans[i + 1])
+      }
+   }
+   console.log(ans)
+
+   let GCD = ans.at(-2) // 21
+   let LCM = (m * n) / GCD // 52479
+
+   return [GCD, LCM]
 }
