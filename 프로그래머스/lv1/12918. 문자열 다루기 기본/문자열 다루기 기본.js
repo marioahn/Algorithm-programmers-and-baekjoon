@@ -1,14 +1,3 @@
-// 네비게이터
-/**/
-  // 문제 조건 + s의 길이가 4혹은 6이어야만 한다
-
-// ----------
-function solution(s) {
-  var answer = true;
-  // if s > 0 {}
-  return answer;
-}
-
 // console.log(solution('a234'))
 // console.log(solution('1234'))
 // test
