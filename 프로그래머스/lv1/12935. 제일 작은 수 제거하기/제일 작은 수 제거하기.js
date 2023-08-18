@@ -1,5 +1,13 @@
 function solution(arr) {
-    arr.splice(arr.indexOf(Math.min(...arr)),1)
-    
-    return (arr.length !== 0) ? arr : [-1]
+  if (arr.length === 1) return [-1];
+
+  let i = 0;
+  for (let j=0; j<arr.length; j++) {
+    if (arr[i] > arr[j]) {
+      i = j
+    }
+  }
+  arr.splice(i,1)
+  
+  return arr
 }
