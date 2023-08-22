@@ -9,10 +9,15 @@
 
 function solution (n, m, section){
   let arrN = []
+  let sectionSet = new Set(section);
   for (let i=1; i<=n; i++) {
-    if (section.includes(i) > 0) arrN.push(0)
+    if (sectionSet.has(i) > 0) arrN.push(0)
     else arrN.push(1)
   }
+  // for (let i=1; i<=n; i++) {
+  //   if (section.includes(i) > 0) arrN.push(0)
+  //   else arrN.push(1)
+  // } -> includes는 O(n)
   // [1, 0, 0, 1, 1, 0, 1, 1] 
   // [0, 1, 0, 1, 1]
   // [0, 0, 0, 0]
