@@ -11,7 +11,7 @@ function solution(s) {
               cntX++;
           } else {
               cntO++;
-          } ``
+          } 
 
           if (cntX === cntO) {
               answer++;
