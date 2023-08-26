@@ -10,7 +10,7 @@
 //     sortedScore.splice(0,m)  
 //   }
 //   return answer
-// } -> 실패
+// } //-> 실패
 function solution (k, m, score) {
   let answer = 0
   const sortedScore = score.sort((a,b) => b - a)
