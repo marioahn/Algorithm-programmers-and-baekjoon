@@ -25,7 +25,7 @@ function solution (n, m, section){
   for (let i = 0; i < n; i++) {
     if (arrN[i] === 0) {
       cnt ++
-      i += m - 1
+      i += m-1
     }
   }
   return cnt
