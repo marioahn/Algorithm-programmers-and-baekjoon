@@ -21,10 +21,8 @@ function solution (k, m, score) {
       boxArr.push(sortedScore.slice(i, i+m))
     }
   }
-
   boxArr.map(v => {
     answer += v[m-1] * m
   })
-
   return answer
 }
