@@ -1,4 +1,3 @@
-// fibonachi함수 재귀로 어떻게 하더라
 
 function solution(n) {
   let fibonachi = [0,1]
