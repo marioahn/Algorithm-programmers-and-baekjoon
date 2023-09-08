@@ -1,47 +1,20 @@
+// 2트: 위처럼 하지말고, 그냥 '라운드'로 보자
+  // 각각의 번호가 몇 라운드에서 만나는지?
+  // 1트는 a,b를 각각 조작하기 때문에 시간이 더 걸리는 것
+  // 이 경우는 a,b 대소 판단도 필요 없다!
 
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-function solution(n,a,b)
-{
-    if (a > b) {
-        var t = b;
-        b = a;
-        a = t;
-    }
-    var times = 1;
+function solution(n,a,b) {
+  
+  let cnt = 0
 
-    while(a%2!==1 || b-a > 1) {
-        if (a % 2 === 1) a++;
-        if (b % 2 === 1) b++;
-        a = a/2;
-        b = b/2;
-        times++;
-    }
+  while (a !== b) {
+    a = Math.ceil(a/2)
+    b = Math.ceil(b/2)
+    cnt ++ 
+  }
 
-
-    // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
-    //console.log('Hello Javascript')
-
-    return times;
+  return cnt
 }
+
+console.log(solution(8,4,7))
+console.log(solution(2**20,1,2**20-1))
