@@ -1,4 +1,6 @@
-// 2트: 
+// 2트
+  // 어라.. 근데, 굳이 indexOf로 최댓값과 최댓값의 인덱스 찾을 필요 없잖아
+  // 그냥 내림차순sort하고 앞에서 부터 걸러내면 될거같은데?
 function solution(k, tangerine) {
   let obj = {};
 
@@ -7,7 +9,7 @@ function solution(k, tangerine) {
     else obj[tangerine[i]] += 1
   };
 
-  let values = Object.values(obj);
+  let values = Object.values(obj); // obj에서 value값만 떼와서 모음
   values.sort((a,b) => b-a)
   
   for (let i=0; i<values.length; i++) {
