@@ -1,7 +1,12 @@
 function solution(citations) {
-    let i = 0;
+    var answer = 0;
 
-    while(i + 1 <= citations.sort((a, b) => b - a)[i]) i++;
+    citations.sort((a, b) => b - a);
 
-    return i;
+    for(let i = 0; i < citations.length; i++) {
+        if(citations[i] > i) answer++;
+        else break;
+    }
+
+    return answer;
 }
