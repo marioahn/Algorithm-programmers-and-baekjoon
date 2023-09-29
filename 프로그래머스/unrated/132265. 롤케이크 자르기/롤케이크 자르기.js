@@ -40,7 +40,7 @@
 // 3트 - 잠깐만. 생각해보니, 왜 자꾸 좌/우를 항상 비교하면서 해?
   // 좌를 먼저 쭉 구하고, 우측에서 한개씩 뺏는다고 생각하면 되지 않을까?
   // 이 과정을 모-두 해쉬로 처리하면 될것 같다
-
+	// 성공!!!!!
 function solution(topping) {
   let left = {}
   let right = {}
@@ -72,3 +72,5 @@ function solution(topping) {
   return answer;
 }
 
+// 4트 - 레퍼런스
+https://school.programmers.co.kr/questions/49346
