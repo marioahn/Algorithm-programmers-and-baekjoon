@@ -6,4 +6,4 @@
 
 def solution(phone_number):
     return (len(phone_number)-4)*'*' + phone_number[len(phone_number)-4:len(phone_number)]
-
+    # return "*"*(len(s)-4)+s[-4:] -> 아 그냥 [-4:] 하면 되네;;
