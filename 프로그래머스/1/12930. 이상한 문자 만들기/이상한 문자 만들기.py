@@ -15,5 +15,9 @@ def solution(s):
 
     return answer
 
-
 print(solution("try hello world")) # "TrY HeLlO WoRlD"
+
+
+# 레퍼런스
+# def toWeirdCase(s):
+#     return " ".join(map(lambda x: "".join([a.lower() if i % 2 else a.upper() for i, a in enumerate(x)]), s.split(" ")))
