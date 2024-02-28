@@ -11,3 +11,11 @@ def solution(numbers):
             result.append(sum(combi))
     
     return sorted(result)
+
+# 아이고;; 그냥 하면 되는건데 너무 과하게 풀긴 했네
+# def solution(numbers):
+#     answer = []
+#     for i in range(len(numbers)):
+#         for j in range(i+1, len(numbers)):
+#             answer.append(numbers[i] + numbers[j])
+#     return sorted(list(set(answer)))
