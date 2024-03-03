@@ -4,7 +4,6 @@
 
 def solution(k, m, score):
     result = 0
-
     score.sort()
     score = score[len(score)%m:] # 상자안에 안 들어가는 저품질 사과는 버리기
 
@@ -14,3 +13,7 @@ def solution(k, m, score):
     return result
 
 print(solution(4,3,[4, 1, 2, 2, 4, 4, 4, 4, 1, 2, 4, 2]))
+
+# 레퍼런스 -> 맞네;
+# def solution(k, m, score):
+#     return sum(sorted(score)[len(score)%m::m])*m
