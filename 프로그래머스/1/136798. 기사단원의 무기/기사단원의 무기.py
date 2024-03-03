@@ -21,6 +21,9 @@ def solution(number, limit, power):
             sum += power
 
     return sum
+    # 한 줄 코딩 - 근데, cf(i)를 2번 호출하게 되므로, 더 비효율적이긴 함
+    # return sum([cf(i) if cf(i)<=limit else power for i in range(1,number+1)])
+
 
 
 print(solution(5,3,2))
