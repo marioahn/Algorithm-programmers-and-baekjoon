@@ -29,3 +29,18 @@ def solution(babbling):
 
 print(solution(["aya", "yee", "u", "maa"]))
 print(solution(["ayaye", "uuu", "yeye", "yemawoo", "ayaayaa"]))
+
+def solution(babbling):
+    answer = 0
+    for i in babbling:
+        for j in ['aya','ye','woo','ma']:
+            # 아 이렇게 하면, 연속발음 바로 걸러지는구나;;
+            if j*2 not in i:
+                i=i.replace(j,' ')
+
+        if len(i.strip())==0: # 공백제거
+            answer +=1
+    return answer
+
+
+print(solution(["woowo"]))
