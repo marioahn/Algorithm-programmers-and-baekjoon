@@ -1,6 +1,6 @@
 # [level 1] 로또의 최고 순위와 최저 순위 - 77484 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/77484?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/77484?language=python3#fn1) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 03월 04일 14:44:03
+2024년 03월 04일 14:46:36
 
 ### 문제 설명
 
