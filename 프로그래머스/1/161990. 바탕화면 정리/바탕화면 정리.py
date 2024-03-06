@@ -21,5 +21,13 @@ def solution(wallpaper):
 
 print(solution([".#...", "..#..", "...#."]))
 
-
+# 레퍼런스 코드 - 큰 차이는 없지만, 훨신 간결 - 내 코드는 한눈에 안 들어옴
+# def solution(wall):
+#     a, b = [], []
+#     for i in range(len(wall)):
+#         for j in range(len(wall[i])):
+#             if wall[i][j] == "#":
+#                 a.append(i)
+#                 b.append(j)
+#     return [min(a), min(b), max(a) + 1, max(b) + 1]
 
