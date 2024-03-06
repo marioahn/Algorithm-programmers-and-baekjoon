@@ -19,10 +19,8 @@ def solution(park, routes):
         for k in range(int(route[-1])):
             tx += way_dict[route[0]][0]
             ty += way_dict[route[0]][1]
-            if (tx<0 or tx>=len(park)):
-                flag= False
-                break
-            if (ty<0 or ty>= len(park[0])):
+            
+            if tx<0 or tx>=len(park) or ty<0 or ty>= len(park[0]):
                 flag= False
                 break
             if park[tx][ty] == 'X':
@@ -34,6 +32,3 @@ def solution(park, routes):
 
     return [sx,sy]
 
-# print(solution(["SOO","OOO","OOO"],["E 2","S 2","W 1"]))
-# print(solution(["SOO","OXX","OOO"],["E 2","S 2","W 1"]))
-print(solution(["OSO","OOO","OXO","OOO"],["E 2","S 3","W 1"]))
