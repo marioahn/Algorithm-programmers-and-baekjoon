@@ -22,5 +22,13 @@ def solution(n,a,b):
 
     return cnt
 
-
 print(solution(8,4,7))
+
+# 레퍼런스 - 앗;;;ㅋㅎㅎ;; 너무 복잡하게 생각했네
+# def solution(n,a,b):
+#     answer = 0
+#     while a != b:
+#         answer += 1
+#         a, b = (a+1)//2, (b+1)//2
+
+#     return answer
