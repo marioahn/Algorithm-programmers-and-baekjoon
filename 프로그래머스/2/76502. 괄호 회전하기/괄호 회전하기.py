@@ -1,0 +1,44 @@
+# 1. 한칸 왼쪽으로 돌리는 함수
+# 2. 올바른 괄호문자열인지 확인
+    # 안되는 경우: 일단 짝이 안맞는경우 '}}'
+    # 흠.. )(이렇게 거꾸로 붙어있는 경우는 어떻게 돌리던 안되는거같음
+    # 그냥 앞에서부터 오프너 담아주고, 클로저들어왔을때 오프너랑 같이 없애지냐만 판별
+
+def is_right(strs):
+    bucket = []
+    pair = {')': '(', '}': '{', ']': '['}
+
+    if strs[0] in [')', '}', ']']:
+        return False
+
+    for str in strs:
+        if str in ['(', '{', '[']: # 오프너면
+            bucket.append(str)
+        else: # 클로저면
+            # 빈배열이면, bucket[-1] -> list index out of range에러
+            if len(bucket) == 0 or bucket[-1] != pair[str]:
+                return False
+            else:
+                del bucket[-1]
+    
+    if bucket == []: # 추가해줘야 함!
+        return True
+    else:
+        return  False
+
+def solution(s):
+    cnt = 0
+
+    # 1. 처음 상태(회전x)
+    if is_right(s):
+        cnt += 1
+    
+    # 2. 회전시작
+    for _ in range(len(s)-1):
+        s = s[1:] + s[0]
+        if is_right(s):
+            cnt += 1
+
+    return cnt
+
+print(solution("{([")) # 이거 0나와야 함 -> is_right함수 return값 수정
