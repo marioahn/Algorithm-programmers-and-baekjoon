@@ -22,22 +22,30 @@
 # 추가적으로, 종류의 '수'만 cnt하면 된다
 # 즉, 어떤 종류들이 골라지는지는 상관이 x;;
 # 1트에서처럼 [key,value]가 필요없는 것
-def solution(k, tangerine):
-    just_maxcheck = max(tangerine)
-    # 0번인덱스 = 허수, 1번인덱스 = 1번크기
-    bucket = [0 for _ in range(0,just_maxcheck+1)]
+# def solution(k, tangerine):
+#     just_maxcheck = max(tangerine)
+#     # 0번인덱스 = 허수, 1번인덱스 = 1번크기
+#     bucket = [0 for _ in range(0,just_maxcheck+1)]
     
-    for ele in tangerine:
-        bucket[ele] += 1
-    bucket.sort(reverse=True)    
+#     for ele in tangerine:
+#         bucket[ele] += 1
+#     bucket.sort(reverse=True)    
 
-    types = 0
-    for ele2 in bucket:
-        types += 1
-        k -= ele2
-        if k<=0:
-            return types
-    
-print(solution(6,[1, 3, 2, 5, 4, 5, 2, 3]))
-print(solution(4,[1, 3, 2, 5, 4, 5, 2, 3]))
-print(solution(2,[1, 1, 1, 1, 2, 2, 2, 3]))
+#     types = 0
+#     for ele2 in bucket:
+#         types += 1
+#         k -= ele2
+#         if k<=0:
+#             return types
+
+import collections
+def solution(k, tangerine):
+    answer = 0
+    cnt = collections.Counter(tangerine)
+
+    for v in sorted(cnt.values(), reverse = True):
+        k -= v
+        answer += 1
+        if k <= 0:
+            break
+    return answer
