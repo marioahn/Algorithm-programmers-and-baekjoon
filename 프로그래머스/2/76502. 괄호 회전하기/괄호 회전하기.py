@@ -42,3 +42,24 @@ def solution(s):
     return cnt
 
 print(solution("{([")) # 이거 0나와야 함 -> is_right함수 return값 수정
+
+
+# 레퍼런스 - (), {}, []가 있으면 replace도 좋은 방법이네..오히려 간단한듯?
+    # 조건도 덜 넣어도 되네;;
+# from collections import deque
+
+# def check(s):
+#     while True:
+#         if "()" in s: s=s.replace("()","")
+#         elif "{}" in s: s=s.replace("{}","")
+#         elif "[]" in s: s=s.replace("[]","")
+#         else: return False if s else True       
+
+# def solution(s):
+#     ans = 0
+#     que = deque(s)
+
+#     for i in range(len(s)):
+#         if check(''.join(que)): ans+=1
+#         que.rotate(-1)
+#     return ans
