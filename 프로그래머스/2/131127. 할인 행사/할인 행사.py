@@ -1,18 +1,12 @@
-# 기본만 일단 해볼까..
+from collections import Counter
 def solution(want, number, discount):
-    day_cnt = 0
-    dict = {key: value for key, value in zip(want, number)}
+    answer = 0
+    dic = {}
+    for i in range(len(want)):
+        dic[want[i]] = number[i]
 
-    for k in range(len(discount)-9):
-        tmp = discount[k:k+10]
-        flag = True
-        for ele in want:
-            if dict[ele] != tmp.count(ele):
-                flag = False
-                break
-        
-        if flag: day_cnt += 1
+    for i in range(len(discount)-9):
+        if dic == Counter(discount[i:i+10]): 
+            answer += 1
 
-    return day_cnt
-
-print(solution(["banana", "apple", "rice", "pork", "pot"],[3, 2, 2, 2, 1],["chicken", "apple", "apple", "banana", "rice", "apple", "pork", "banana", "pork", "rice", "pot", "banana", "apple", "banana"]))
+    return answer
