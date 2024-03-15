@@ -20,17 +20,18 @@
         
 #         if flag == False:
 #             result.append(-1) # 뒷큰수가 없는 경우
-
+   
 #     result.append(-1) # 마지막은 무조건 -1
 #     return result
 
 # 2트 - stack
 def solution(numbers):
+    # 애초에 처음부터 -1쭉 해놓으면 마지막 경우 처리 안해도되네(마지막은 무조건 -1)
     result = [-1] * len(numbers)  
     stack = []
     
     for i, num in enumerate(numbers):
-        while stack and numbers[stack[-1]] < num:
+        while stack and numbers[stack[-1]] < num: # 여기 while이 핵심중 하나
             result[stack.pop()] = num
         stack.append(i)
     
