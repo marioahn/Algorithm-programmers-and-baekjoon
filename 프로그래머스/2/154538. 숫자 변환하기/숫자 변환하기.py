@@ -79,7 +79,7 @@ def solution(x,y,n):
     dist = [0] * 1000001 # 만약 요소가 0이면, 도달 못한다는 뜻임ㅇㅇ
     bfs(x,y,n)
 
-    return dist[y]-1 
+    return dist[y]-1 # 이렇게하면 도달x도 자연스럽게 -1나옴
 
 print(solution(10,40,5))
 print(solution(10,40,30))
