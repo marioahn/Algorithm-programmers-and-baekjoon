@@ -44,4 +44,4 @@ def solution(storey):
 print(solution(16))
 print(solution(2554))
 print(solution(367)) # 10
-print(solution(667)) # 10
+print(solution(667)) # 10이 나와야 함: 670 -> 700 -> 1000 -> 0
