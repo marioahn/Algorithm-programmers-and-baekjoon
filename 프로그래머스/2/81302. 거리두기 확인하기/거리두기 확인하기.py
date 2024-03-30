@@ -47,8 +47,6 @@ def keep_distance(arr):
     return 1
 
 
-
-
 def solution(places):
     answer = []
     for place in places:
@@ -63,3 +61,31 @@ def solution(places):
 # print(keep_distance(["PXPXP", "XPXPX", "PXPXP", "XPXPX", "PXPXP"]))
 
 print(solution([["POOOP", "OXXOX", "OPXPX", "OOXOX", "POXXP"], ["POOPX", "OXPXP", "PXXXO", "OXXXO", "OOOPP"], ["PXOPX", "OXOXP", "OXPOX", "OXXOP", "PXPOX"], ["OOOXX", "XOOOX", "OOOXX", "OXOOX", "OOOOO"], ["PXPXP", "XPXPX", "PXPXP", "XPXPX", "PXPXP"]]))
+
+
+# 레퍼런스
+    # 또 너무 복잡하게 생각했네..
+    # 5*5고정이므로 그냥 아래처럼 해도 됨..
+    # 이게 실전이었으면 나는 무조건 떨어졌음 & 선.택.과 집.중이 필요한데, 나는 이 부분을 전혀 못했음
+    # 처음에 아이디어 방향을 잘못 잡기도 했던 듯 싶다 흠..
+# def check(place):
+#     for irow, row in enumerate(place):
+#         for icol, cell in enumerate(row):
+#             if cell != 'P':
+#                 continue
+#             if irow != 4 and place[irow + 1][icol] == 'P':
+#                 return 0
+#             if icol != 4 and place[irow][icol + 1] == 'P':
+#                 return 0
+#             if irow < 3 and place[irow + 2][icol] == 'P' and place[irow + 1][icol] != 'X':
+#                 return 0
+#             if icol < 3 and place[irow][icol + 2] == 'P' and place[irow][icol + 1] != 'X':
+#                 return 0
+#             if irow != 4 and icol != 4 and place[irow + 1][icol + 1] == 'P' and (place[irow + 1][icol] != 'X' or place[irow][icol + 1] != 'X'):
+#                 return 0
+#             if irow != 4 and icol != 0 and place[irow + 1][icol - 1] == 'P' and (place[irow + 1][icol] != 'X' or place[irow][icol - 1] != 'X'):
+#                 return 0
+#     return 1
+
+# def solution(places):
+#     return [check(place) for place in places]
