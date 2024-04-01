@@ -11,16 +11,17 @@ def solution(arrayA, arrayB):
     gcdB = arrayB[0]
     
     for n in arrayA[1:]:
-        gcdA = gcd(n, gcdA)
+        gcdA = gcd(n, gcdA) # 2,4,6,8,3,7이면 1이 나와야 하는..
         
     for n in arrayB[1:]:
         gcdB = gcd(n, gcdB)
         
+    # 두 조건 중 하나를 만족하는 가장 큰 양의 정수 a의 값을 구해야 하므로 각각 max!
     # 첫 번째 조건
-    if notDiv(arrayA, gcdB): # True면
+    if notDiv(arrayA, gcdB): # True면 그게 바로 정답
         answer = max(answer, gcdB)
     
-    # 두 번째 조건
+    # or 두 번째 조건
     if notDiv(arrayB, gcdA):
         answer = max(answer, gcdA)
         
@@ -33,6 +34,7 @@ def gcd(a, b):
     return gcd(b, a % b)
  
 # 처음부터 끝까지 순회해서 떨어지는지 아닌지 확인
+    # 안 떨어지면 true반환 = notDiv
 def notDiv(array, gcd):
     for n in array:
         if n % gcd == 0:
