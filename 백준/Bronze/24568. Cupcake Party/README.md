@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 31120 KB, 시간: 40 ms
+메모리: 14048 KB, 시간: 120 ms
 
 ### 분류
 
@@ -12,13 +12,13 @@
 
 ### 제출 일자
 
-2023년 10월 16일 18:16:29
+2024년 5월 9일 00:03:37
 
 ### 문제 설명
 
 <p>A regular box of cupcakes holds 8 cupcakes, while a small box holds 3 cupcakes. There are 28 students in a class and a total of at least 28 cupcakes. Your job is to determine how many cupcakes will be left over if each student gets one cupcake.</p>
 
-<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/8ade8b89-bc7a-4438-a7fe-dad6f604a66d/-/preview/" style="width: 383px; height: 108px;"></p>
+<p style="text-align: center;"><img alt="" src="" style="width: 383px; height: 108px;"></p>
 
 ### 입력 
 
