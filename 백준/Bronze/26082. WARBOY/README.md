@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 31120 KB, 시간: 40 ms
+메모리: 17680 KB, 시간: 204 ms
 
 ### 분류
 
@@ -12,11 +12,11 @@
 
 ### 제출 일자
 
-2023년 10월 17일 00:12:30
+2024년 5월 11일 10:17:41
 
 ### 문제 설명
 
-<p style="text-align: center;"><img alt="" src="" style="height: 272px; width: 500px;"></p>
+<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/6a1d64e7-3819-40b4-8ae3-f26f04a02e7b/-/preview/" style="height: 272px; width: 500px;"></p>
 
 <blockquote>
 <p>Furiosa AI에서는 AI 연산에 최적화된 반도체인 WARBOY란 이름의 NPU(Neural Processing Unit)를 만들고 있다. NPU는 인공지능 모델의 학습 및 추론을 기존의 처리 유닛보다 훨씬 빠르게 할 수 있다.</p>
