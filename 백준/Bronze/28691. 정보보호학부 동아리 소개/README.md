@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 31120 KB, 시간: 40 ms
+메모리: 17532 KB, 시간: 204 ms
 
 ### 분류
 
@@ -12,7 +12,7 @@
 
 ### 제출 일자
 
-2023년 10월 17일 17:05:21
+2024년 5월 18일 11:08:56
 
 ### 문제 설명
 
@@ -33,7 +33,7 @@
 		<li>
 		<p><strong>WiCys</strong></p>
 
-		<p><img alt="" src="https://upload.acmicpc.net/a17b9acf-3278-41f4-9cf9-7a01867e7b9d/-/crop/1107x367/0,0/-/preview/" style="width: 320px; max-width: 100%;"></p>
+		<p><img alt="" src="" style="width: 320px; max-width: 100%;"></p>
 		</li>
 	</ul>
 	</li>
@@ -42,7 +42,7 @@
 		<li>
 		<p><strong>CyKor</strong></p>
 
-		<p><img alt="" src="https://upload.acmicpc.net/0a2106e2-c31d-4eca-a2de-bc64b628b457/-/preview/" style="width: 320px; max-width: 100%;"></p>
+		<p><img alt="" src="" style="width: 320px; max-width: 100%;"></p>
 		</li>
 		<li>
 		<p><strong>AlKor</strong></p>
@@ -56,7 +56,7 @@
 		<li>
 		<p><strong>$clear</strong></p>
 
-		<p><img alt="" src="https://upload.acmicpc.net/a18d2cdc-cd08-4852-8e6f-87c9a3bbba5f/-/crop/1127x305/0,0/-/preview/" style="width: 320px; max-width: 100%;"></p>
+		<p><img alt="" src="" style="width: 320px; max-width: 100%;"></p>
 		</li>
 	</ul>
 	</li>
