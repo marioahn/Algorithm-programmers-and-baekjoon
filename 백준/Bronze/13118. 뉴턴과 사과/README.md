@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 31120 KB, 시간: 40 ms
+메모리: 17664 KB, 시간: 212 ms
 
 ### 분류
 
@@ -12,29 +12,29 @@
 
 ### 제출 일자
 
-2023년 10월 20일 22:40:20
+2024년 6월 8일 10:57:10
 
 ### 문제 설명
 
-<p style="text-align: center;"><img alt="" src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/13118/img1.png" style="height:275px; width:397px"></p>
+<p style="text-align: center;"><img alt="" src="" style="height:275px; width:397px"></p>
 
 <p style="text-align: center;">사과가 떨어지기를 기다리는 사람들.</p>
 
 <p>그림과 같이 네 명의 사람이 사과가 떨어지기를 기다리고 있다. 모든 사람은 <em>x</em>축 위의 한 점에 가만히 서 있으며, 여러 사람이 같은 점에 서 있는 경우는 없다. <em>i</em>번 (1 ≤ <em>i</em> ≤ 4) 사람은 점 (<em>p<sub>i</sub></em>, 0) 위에 있다고 하자. 거대한 좌표평면에 비해 사람은 작은 존재이므로, 편의상 각 사람의 크기는 무시하자.</p>
 
-<p style="text-align: center;"><img alt="" src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/13118/figure_1.png" style="height:32px; width:309px"></p>
+<p style="text-align: center;"><img alt="" src="" style="height:32px; width:309px"></p>
 
 <p style="text-align: center;"><em>x</em>축 위에서 기다리는 사람들.</p>
 
 <p>사과는 좌표평면 위의 한 점 (<em>x</em>, <em>y</em>)를 중심으로 하는 반지름이 <em>r</em>인 원이며, 현재 공중에 가만히 떠 있으므로 모든 점이 <em>x</em>축의 위쪽(즉 <em>y</em> > 0인 영역)에 있다.</p>
 
-<p style="text-align: center;"><img alt="" src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/13118/figure_2.png" style="height:238px; width:143px"></p>
+<p style="text-align: center;"><img alt="" src="" style="height:238px; width:143px"></p>
 
 <p style="text-align: center;"><em>x</em>축 위에 떠 있는 사과.</p>
 
 <p>사과에는 −<em>y</em>축 방향의 중력만이 작용한다. 중력의 크기는 일정하므로, 사과는 지표면(<em>x</em>축)을 향해 등가속도 운동을 하다가, <em>x</em>축과 접하게 되는 순간 멈추게 된다고 한다.</p>
 
-<p style="text-align: center;"><img alt="" src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/13118/figure_3.png" style="height:302px; width:138px"></p>
+<p style="text-align: center;"><img alt="" src="" style="height:302px; width:138px"></p>
 
 <p style="text-align: center;"><em>x</em>축을 향해 떨어지는 사과.</p>
 
