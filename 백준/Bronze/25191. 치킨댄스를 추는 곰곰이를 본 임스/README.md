@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 31120 KB, 시간: 40 ms
+메모리: 14096 KB, 시간: 120 ms
 
 ### 분류
 
@@ -12,11 +12,11 @@
 
 ### 제출 일자
 
-2023년 10월 26일 22:29:26
+2024년 6월 27일 03:35:29
 
 ### 문제 설명
 
-<p style="text-align: center;"><img alt="치킨댄스 곰곰이" src="" style="max-height:120px; object-fit:contain; display:inline-block;"></p>
+<p style="text-align: center;"><img alt="치킨댄스 곰곰이" src="https://upload.acmicpc.net/d23d74f0-5b19-4c90-8b90-d537c5e05b39/-/preview/" style="max-height:120px; object-fit:contain; display:inline-block;"></p>
 
 <p>치킨 댄스를 추고 있는 곰곰이를 본 임스는 치킨을 먹고 싶어졌다. 임스는 치킨 <mjx-container class="MathJax" jax="CHTML" style="font-size: 109%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></mjx-assistive-mml><span aria-hidden="true" class="no-mathjax mjx-copytext">$1$</span></mjx-container>마리를 먹을 때 반드시 집에 있는 콜라 <mjx-container class="MathJax" jax="CHTML" style="font-size: 109%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math></mjx-assistive-mml><span aria-hidden="true" class="no-mathjax mjx-copytext">$2$</span></mjx-container>개나 맥주 <mjx-container class="MathJax" jax="CHTML" style="font-size: 109%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></mjx-assistive-mml><span aria-hidden="true" class="no-mathjax mjx-copytext">$1$</span></mjx-container>개와 같이 먹어야 한다.</p>
 
