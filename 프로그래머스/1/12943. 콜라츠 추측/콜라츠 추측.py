@@ -6,7 +6,3 @@ def solution(num):
         cnt += 1
         if num == 1: return cnt
         if cnt == 500: return -1
-    
-
-
-print(solution(6))
