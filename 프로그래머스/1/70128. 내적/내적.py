@@ -6,5 +6,9 @@
 #         sum += a[k]*b[k]
 #     return sum
 
-def solution(a,b):
-    return sum([x*y for x,y in zip(a,b)])
+# def solution(a,b):
+#     return sum([x*y for x,y in zip(a,b)])
+
+# solution = lambda x,y: sum(x*y for x,y in zip(a,b)) -> 에러
+
+solution = lambda a, b: sum(x*y for x, y in zip(a,b))
