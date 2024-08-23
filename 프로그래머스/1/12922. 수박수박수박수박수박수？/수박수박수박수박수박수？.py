@@ -3,3 +3,4 @@ def solution(n):
     # 레퍼런스 아래 방법이 오히려 더 깔끔한듯
     # str = "수박"*n
     # return str[:n]
+    
