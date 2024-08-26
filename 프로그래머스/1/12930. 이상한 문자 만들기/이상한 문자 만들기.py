@@ -1,23 +1,14 @@
-# 각 단어의 짝수번째 알파벳은 대문자로, 홀수번째 알파벳은 소문자
 def solution(s):
-    to_list = s.split(' ')
+    to_list = s.split(" ")
     answer = ''
     
     for i in range(len(to_list)):
         for j in range(len(to_list[i])):
-            if (j%2) == 0:
+            if (j%2 == 0):
                 answer += to_list[i][j].upper()
-            else:
-                answer += to_list[i][j].lower()
-        answer += ' ' # 각 단어마다 공백 추가
+            else: answer += to_list[i][j].lower()
+        answer += " " # 공백
     
-    answer = answer[:-1] # 마지막 공백 빼주기
-
+    answer = answer[:-1] # 마지막 공백 빼기
+    
     return answer
-
-print(solution("try hello world")) # "TrY HeLlO WoRlD"
-
-
-# 레퍼런스
-# def toWeirdCase(s):
-#     return " ".join(map(lambda x: "".join([a.lower() if i % 2 else a.upper() for i, a in enumerate(x)]), s.split(" ")))
