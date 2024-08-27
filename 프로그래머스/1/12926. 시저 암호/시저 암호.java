@@ -2,17 +2,22 @@ class Solution {
     public String solution(String s, int n) {
         String answer = "";
         
-        for (int i=0; i<s.length(); i++) {
-            char ch = s.charAt(i);
-            
-            if (Character.isLowerCase(ch)) { // 소문자
-                ch = (char) ((ch-'a'+n) % 26 + 'a');
-            } else if (Character.isUpperCase(ch)) {
-                ch = (char) ((ch-'A'+n) % 26 + 'A');
+        char[] ch = s.toCharArray();
+        
+        for(char c : ch) {
+            if(c == 32) answer += " ";
+            else {
+                if(c <= 90) {
+                    c += n;
+                    if(c > 90) c -= 26;
+                } else {
+                    c += n;
+                    if(c > 122) c -= 26;
+                }
+                answer += c;
             }
-            
-            answer += ch;
         }
+        
         return answer;
     }
 }
