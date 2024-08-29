@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 31120 KB, 시간: 40 ms
+메모리: 14468 KB, 시간: 112 ms
 
 ### 분류
 
@@ -12,7 +12,7 @@
 
 ### 제출 일자
 
-2024년 2월 17일 13:45:38
+2024년 8월 29일 12:32:57
 
 ### 문제 설명
 
@@ -22,23 +22,23 @@
 	<tbody>
 		<tr>
 			<th style="width:20%">블래스터 라이플</th>
-			<td style="width:20%">\$350.34</td>
+			<td style="width:20%"><span>$</span>350.34</td>
 		</tr>
 		<tr>
 			<th>시각 센서</th>
-			<td>\$230.90</td>
+			<td><span>$</span>230.90</td>
 		</tr>
 		<tr>
 			<th>청각 센서</th>
-			<td>\$190.55</td>
+			<td><span>$</span>190.55</td>
 		</tr>
 		<tr>
 			<th>팔</th>
-			<td>\$125.30</td>
+			<td><span>$</span>125.30</td>
 		</tr>
 		<tr>
 			<th>다리</th>
-			<td>\$180.90</td>
+			<td><span>$</span>180.90</td>
 		</tr>
 	</tbody>
 </table>
