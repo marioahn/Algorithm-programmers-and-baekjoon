@@ -2,10 +2,10 @@
     # 이걸 set으로 바꿔서 중복제거하고, 다시 list화
 from itertools import combinations
 
-
 def solution(numbers):
     combis = list(combinations(numbers,2))
     result = []
+    
     for combi in combis:
         if sum(combi) not in result:
             result.append(sum(combi))
